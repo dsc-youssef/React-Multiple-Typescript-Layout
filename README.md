@@ -15,11 +15,14 @@
 ## # Importing Allies
 * `@/*` root directory is (`./src`)
 * `~/*` root directory is (`./public`)
+* `~bootstrap/*` root directory is (`./node_modules/bootstrap/scss`)
 
 ## # Libraries & Languages
 * ### You will find the libraries version in `package.json`
 * [SASS](https://sass-lang.com/) 
 * [TypeScript](https://www.typescriptlang.org) 
+* [Bootstrap](https://getbootstrap.com) 
+* [react-bootstrap](react-bootstrap.github.io) 
 * [Tailwind](https://tailwindcss.com) 
 * [PostCSS](https://postcss.org) 
 * [Axios](https://axios-http.com/docs/intro) 

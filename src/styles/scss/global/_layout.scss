@@ -1,4 +1,11 @@
-.direction-ltr {
-  font-family: 'Poppins', sans-serif;
-  direction: ltr;
+.#{$GLOBAL-PREFIX} {
+  &.direction-ltr {
+    font-family: 'Poppins', sans-serif;
+    direction: ltr;
+  }
+
+  &.direction-rtl {
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+  }
 }

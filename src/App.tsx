@@ -6,7 +6,9 @@ import MainProvider from "@/components/global/MainProvider";
 import ThemeProvider from "@/components/global/ThemeProvider";
 
 // Style
+import "@/styles/bootstrap.scss";
 import "@/styles/style.scss";
+
 
 // Layouts
 const Dashboard = React.lazy(() => import("./layouts/dashboard"));
