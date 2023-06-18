@@ -1,0 +1,6 @@
+@import "./layout";
+
+.#{$DASHBOARD-PREFIX} {
+  @import "./components/components";
+  @import "./pages/pages";
+}

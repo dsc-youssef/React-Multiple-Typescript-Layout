@@ -1,0 +1,6 @@
+@import "./layout";
+
+.#{$WEBSITE-PREFIX} {
+  @import "./pages/pages";
+  @import "./components/components";
+}
