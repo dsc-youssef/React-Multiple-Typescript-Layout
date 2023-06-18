@@ -11,13 +11,18 @@ import { BrowserRouter as Router } from "react-router-dom";
 // Types
 import { MainProviderProps } from "@/interfaces/global/components/MainProvider";
 
+// Loading
+import PageLoading from "../PageLoading";
+
 const MainProvider: React.FC<MainProviderProps> = ({ children }) => {
   return (
-    <Provider store={store}>
-      <Router>
-        {children}
-      </Router>
-    </Provider>
+    <React.Suspense fallback={<PageLoading />}>
+      <Provider store={store}>
+        <Router>
+          {children}
+        </Router>
+      </Provider>
+    </React.Suspense>
   )
 }
 

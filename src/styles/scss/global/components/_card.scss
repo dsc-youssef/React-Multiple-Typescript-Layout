@@ -1,0 +1,22 @@
+.card {
+  @apply w-full border rounded-lg shadow-sm transition;
+
+  &:hover {
+    @apply shadow-md;
+  }
+
+  .card-body,
+  .card-header,
+  .card-footer {
+    @apply w-full py-5 px-4;
+  }
+
+  .card-title {
+    @apply text-3xl font-medium;
+  }
+
+  .card-paragraph {
+    @apply font-light text-sm;
+  }
+
+}
