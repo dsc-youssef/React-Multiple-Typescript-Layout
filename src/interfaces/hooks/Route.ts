@@ -1,6 +1,7 @@
 export interface RouteObject {
   path: string;
-  element: React.FC;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  element: React.FC<any>;
   layout: "dashboard" | "website",
   role: string;
   category?: string;

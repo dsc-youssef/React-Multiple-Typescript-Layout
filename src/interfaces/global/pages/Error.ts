@@ -1,4 +1,5 @@
 export interface ErrorProps {
   error: "404" | "401" | "400",
-  reason: string
+  reason: string,
+  previous: boolean
 }
