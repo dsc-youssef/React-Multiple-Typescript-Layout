@@ -1,4 +1,4 @@
-<h1 style="color:yellow; text-align:center">React Multiple Typescript Layout</h1>
+<h1 style="color:yellow; text-align:center">React Multiple Typescript Layouts</h1>
 <p style="color:lightblue; font-size: 1.1rem; margin-top: 1rem">
   This layout used to help developer's to make a beautiful Organized application and easy to modify it.
 </p>
