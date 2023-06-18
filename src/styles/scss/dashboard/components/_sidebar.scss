@@ -1,0 +1,117 @@
+.sidebar {
+  @apply bg-slate-900 overflow-x-hidden overflow-y-auto shadow-none rounded-none min-w-[275px] min-h-[100vh] z-50 transition-all;
+
+  .sidebar-header {
+    @apply flex items-center w-full h-[85px] pt-4 px-5;
+
+    .sidebar-brand {
+      @apply flex border-b border-white/30 pb-4 justify-center items-center w-full;
+
+      .brand-logo {
+        @apply w-[50px] h-[50px];
+      }
+
+      .sidebar-brand-name {
+        @apply m-0 text-white text-xl;
+      }
+    }
+  }
+
+  .sidebar-body {
+    @apply flex flex-col w-full py-4 px-0 overflow-y-auto overflow-x-hidden;
+    height: calc(100vh - 85px);
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      @apply bg-secondary/20 rounded-lg;
+    }
+
+    .sidebar-user-card {
+      @apply shadow-xl shadow-primary/10 bg-gradient-to-t from-primary/30 via-dark/20 border-r border-l border-primary/20 py-5 px-3 mx-3 mb-4 rounded-xl text-warning transition-all select-none;
+
+      .head {
+        @apply flex gap-4 items-center;
+
+        .avatar {
+          @apply w-[45px] h-[45px] rounded-full object-scale-down;
+        }
+
+        .info {
+          @apply flex flex-col flex-1 text-white;
+        }
+
+        .title {
+          @apply text-[1rem] line-clamp-1 capitalize;
+        }
+
+        .country {
+          @apply text-sm uppercase font-semibold text-info;
+        }
+      }
+
+
+    }
+
+    .sidebar-category {
+
+      .sidebar-category-head {
+        @apply text-white cursor-pointer flex justify-between items-center px-3 mt-3 mb-3 select-none;
+
+        .sidebar-category-title {
+          @apply m-0 w-auto uppercase text-sm font-semibold;
+        }
+
+      }
+    }
+
+    .sidebar-button {
+      @apply line-clamp-1 w-full text-sm flex items-center outline-none border-none rounded overflow-hidden font-medium transition-all relative py-3 px-2 text-white/80 my-[.2rem] select-none;
+
+      &.active {
+        @apply text-white/100 bg-info/20;
+
+        &:hover {
+          @apply translate-x-4 text-white;
+        }
+
+        &::after {
+          content: "";
+          @apply w-[4px] h-full bg-primary absolute left-0 top-0;
+        }
+      }
+
+
+
+      &:hover {
+        @apply translate-x-4 text-info;
+      }
+
+      >.btn-icon {
+        @apply w-[50px] text-[1.2rem];
+      }
+
+      >.btn-title {
+        @apply p-0 m-0 capitalize;
+      }
+
+    }
+
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    @apply absolute left-[-400px];
+
+    &.active {
+      @apply left-0 transition-all;
+    }
+  }
+}

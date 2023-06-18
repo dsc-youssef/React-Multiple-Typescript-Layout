@@ -11,9 +11,7 @@ const reducers = combineReducers({
 
 // Store
 export const store = configureStore({
-  reducer: {
-    reducers
-  },
+  reducer: reducers
 
 })
 
