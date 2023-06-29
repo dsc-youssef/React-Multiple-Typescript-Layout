@@ -15,9 +15,9 @@ import { chartDataset, chartData } from '@/utils/charts/data';
  * @documentation  https://www.chartjs.org/docs/latest/
  */
 const useChart = () => {
-  const defaultOptions: ChartOptions = chartOptions;
-  const defaultDataset: ChartDataset = chartDataset;
-  const defaultChartData: ChartData = chartData;
+  const defaultOptions: ChartOptions<any> = chartOptions;
+  const defaultDataset: ChartDataset<any> = chartDataset;
+  const defaultChartData: ChartData<any> = chartData;
 
   // This Function Used To avoid CategoryScale Error ( IMPORTANT )
   Chart.register(CategoryScale);
@@ -28,7 +28,7 @@ const useChart = () => {
    * @default chartData
    * @return { ChartData }
    */
-  const createDataObject = (data: ChartData = chartData): ChartData => data;
+  const createDataObject = (data: ChartData = chartData): ChartData<any> => data;
 
   /** 
    * @desc This Function Used To Create Chart Options.
@@ -36,7 +36,7 @@ const useChart = () => {
    * @default chartOptions
    * @return ChartOptions 
    */
-  const createOptionsObject = (options: ChartOptions = chartOptions): ChartOptions => options;
+  const createOptionsObject = (options: ChartOptions = chartOptions): ChartOptions<any> => options;
 
   /** 
    * @desc This Function Used To Create a Dataset Object.
@@ -44,14 +44,14 @@ const useChart = () => {
    * @default chartDataset
    * @return ChartDataset 
    */
-  const createDatasetObject = (dataset: ChartDataset = chartDataset): ChartDataset => dataset;
+  const createDatasetObject = (dataset: ChartDataset = chartDataset): ChartDataset<any> => dataset;
 
   /** 
    * @desc This Function Used To Create Array Of Dataset Objects.
    * @param { ChartDataset[] } datasets
    * @return ChartDataset[] 
   */
-  const createDatasetsArray = (datasets: ChartDataset[]): ChartDataset[] => datasets;
+  const createDatasetsArray = (datasets: ChartDataset[]): ChartDataset<any>[] => datasets;
 
   return {
     defaultOptions,
