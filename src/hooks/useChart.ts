@@ -13,6 +13,8 @@ import { chartDataset, chartData } from '@/utils/charts/data';
  * @author #Dev.Youssef
  * @description This hook used to control chart ( data, options, ...)
  * @documentation  https://www.chartjs.org/docs/latest/
+ * @github https://github.com/dsc-youssef
+ * @facebook https://www.facebook.com/YoussefBibawy1/
  */
 const useChart = () => {
   const defaultOptions: ChartOptions<any> = chartOptions;
